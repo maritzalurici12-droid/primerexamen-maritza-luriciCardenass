@@ -1,0 +1,203 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+.header-table {
+    background-color: red;
+    width: 100%;
+    height: 50px;
+}
+
+header h1 {
+    color: white;
+    padding: 10px;
+}
+
+
+.desktop-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+
+.desktop-nav {
+    display: table-cell;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.menu-icon {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+
+.mobile-nav {
+    display: none;
+    background-color: red;
+    padding: 10px;
+}
+
+.mobile-nav a {
+    color: white;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+#menu-toggle:checked ~ .mobile-nav {
+    display: block;
+}
+
+
+#inicio {
+    display: table;
+    width: 100%;
+}
+
+#inicio table {
+    width: 100%;
+    height: 120px;
+}
+
+#productos {
+    width: 100%;
+    padding: 10px;
+}
+
+#productos h2 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+
+#productos table[role="region"] {
+    width: 100%;
+}
+
+#productos table[role="region"] td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+#productos table[role="img"] {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+}
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+
+footer {
+    background-color: #f8f9fa;
+    padding: 15px;
+    text-align: center;
+}
+
+footer table {
+    width: 100%;
+}
+
+.footer-text {
+    color: blue;
+    font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+ 
+    #inicio {
+        display: none;
+    }
+    
+
+    .desktop-nav {
+        display: none;
+    }
+    
+
+    .mobile-menu-icon {
+        display: table-cell !important;
+    }
+    
+    
+    #productos table[role="region"] tr {
+        display: block;
+    }
+    
+    #productos table[role="region"] td {
+        display: block;
+        width: 90%;
+        margin: 15px auto;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+}
+
+
+@media (min-width: 601px) {
+ 
+    .desktop-nav {
+        display: table-cell !important;
+    }
+    
+    .mobile-menu-icon {
+        display: none !important;
+    }
+    
+    .mobile-nav {
+        display: none !important;
+    }
+    
+    #menu-toggle:checked ~ .mobile-nav {
+        display: none !important;
+    }
+}

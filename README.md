@@ -16,3 +16,14 @@ Se implementaron las siguientes mejoras de accesibilidad:
 - Navegación por teclado: Todos los elementos son focusables y navegables con teclado (Tab/Enter).
 - Contraste de colores: Se validó que los colores cumplan con relación de contraste 4.5:1 usando la herramienta WebAIM Contrast Checker.
 - Pruebas con teclado: Se verificó la navegación completa usando solamente el teclado.
+
+
+## SEO
+
+Se implementaron las siguientes técnicas de optimización SEO:
+
+- Título único y descriptivo: "MANACO - Calzado de Calidad en Bolivia | Zapatos y Botas" incluye palabras clave principales y ubicación.
+- Meta descripción: 156 caracteres con palabras clave relevantes y llamado a la acción.
+- Open Graph: Etiquetas básicas para mejorar el compartido en redes sociales (og:title, og:description, og:image).
+- Estructura de encabezados: Jerarquía correcta H1 > H2 > H3 para mejor comprensión del contenido.
+- URL canónica: Implícita mediante GitHub Pages para evitar contenido duplicado.
